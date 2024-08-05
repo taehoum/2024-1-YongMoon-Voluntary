@@ -1,0 +1,45 @@
+title: Sinji Blog #Your awesome title
+email: sinji.3010@gmail.com #youremail@domain.com
+description: 블로그에 대한 간단한 설명을 추가해 주세요~
+
+baseurl: # the subpath of the site
+url: https://sinji2102.github.io/ # the base hostname & protocol for your site
+
+permalink: /:year-:month/:title
+timezone:
+
+favicon: /assets/img/favicon.ico
+
+google_analytics: #UA—XXXXXXXX-X
+disqus_shortname: #disqus shortname
+cusdis:
+  app_id: #your cusdis app_id
+
+user:
+  name: Sinji Yun
+  pic: /assets/img/profile.jpg
+  picAlt: "catbook"
+  job: 웹 개발자
+  aboutme: true # comment this out if you don't need the 'about' page.
+
+exclude:
+  - README.md
+  - LICENSE
+  - github
+
+defaults:
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      comment: true
+
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+markdown: kramdown
+
+# Filtering Content
+show_drafts: null
+limit_posts: 0
+future: false
+unpublished: false
