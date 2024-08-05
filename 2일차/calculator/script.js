@@ -19,16 +19,8 @@ buttons.forEach(button => {
                 let result = 0;
                 let num1 = parseFloat(previousInput);
                 let num2 = parseFloat(currentInput);
-
-                if (operator === '+') {
-                    result = num1 + num2;
-                } else if (operator === '-') {
-                    result = num1 - num2;
-                } else if (operator === '*') {
-                    result = num1 * num2;
-                } else if (operator === '/') {
-                    result = num1 / num2;
-                }
+                
+                // +, - *, / 를 이용해서 계산식을 만들어주세요.
 
                 display.value = result;
                 currentInput = result.toString();

@@ -11,17 +11,21 @@ document.addEventListener('DOMContentLoaded', () => {
         const userGuess = parseInt(guessInput.value, 10);
         attempts++;
 
-        if (userGuess === randomNumber) {
-            resultMessage.textContent = `Congratulations! You guessed the number in ${attempts} attempts.`;
-            resultMessage.style.color = 'green';
-            resetGame();
-        } else if (userGuess > randomNumber) {
-            resultMessage.textContent = 'Too high! Try again.';
-            resultMessage.style.color = 'red';
-        } else {
-            resultMessage.textContent = 'Too low! Try again.';
-            resultMessage.style.color = 'red';
-        }
+        // userGues 와 randomNumber를 비교 해보세요
+        // 같을 때 
+            // 주석을 해제하여 아래 코드를 이용해보세요.
+            // resultMessage.textContent = `Congratulations! You guessed the number in ${attempts} attempts.`;
+            // resultMessage.style.color = 'green';
+            // resetGame();
+        // 클 때
+            // 주석을 해제하여 아래 코드를 이용해보세요.
+            //resultMessage.textContent = 'Too high! Try again.';
+            //resultMessage.style.color = 'red';
+        } 
+        // 작을 때
+            // 주석을 해제하여 아래 코드를 이용해보세요.
+            //resultMessage.textContent = 'Too low! Try again.';
+            //resultMessage.style.color = 'red';
 
         attemptsMessage.textContent = `Attempts: ${attempts}`;
         guessInput.value = '';
